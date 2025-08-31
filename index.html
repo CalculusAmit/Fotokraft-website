@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fotokraft, The photography club of JEC</title>
+    <meta charset="utf-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" type="image/png" href="images/favi_fk.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <link href="https://use.typekit.net/example.css" rel="stylesheet"> <!-- Replace with actual Extenda 20 Micro font link -->
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Custom Fotokraft Yellow Accent Colors -->
+    <style>
+      :root {
+        --fotokraft-yellow: #FFFC33;
+        --fotokraft-heading: #ffffffde;
+      }
+      
+      /* Set Inter as the body font */
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Navigation active states and hover effects */
+      .navbar .nav-menu .dot.active::after,
+      .navbar .nav-menu .dot:hover::after {
+        background-color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Button accents */
+      .btn-custom {
+        border-color: var(--fotokraft-yellow) !important;
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      .btn-custom:hover {
+        background-color: var(--fotokraft-yellow) !important;
+        color: #000 !important;
+      }
+      
+      /* Section headings */
+      .heading-section h2,
+      .ftco-section h2,
+      .section-title {
+        color: var(--fotokraft-heading) !important;
+      }
+      
+      /* Service/Activity card headings */
+      .services .heading,
+      .media-body h3.heading {
+        color: var(--fotokraft-heading) !important;
+      }
+      
+      /* Contact section headings */
+      .contact-section h3 {
+        color: var(--fotokraft-heading) !important;
+      }
+      
+      /* Icon accents */
+      .services .icon span,
+      .contact-section .icon span {
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Progress bar accents */
+      .progress-bar {
+        border-color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Link hover states */
+      a:hover {
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Gallery overlay accents */
+      .model .icon {
+        background-color: var(--fotokraft-yellow) !important;
+        color: #000 !important;
+      }
+      
+      /* Subheading accents */
+      .subheading {
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Logo accent */
+      .logo small {
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Counter and number accents */
+      .counter-wrap .number {
+        color: var(--fotokraft-yellow) !important;
+      }
+      
+      /* Form focus states */
+      .form-control:focus {
+        border-color: var(--fotokraft-yellow) !important;
+        box-shadow: 0 0 0 0.2rem rgba(253, 250, 110, 0.393) !important;
+      }
+      
+      /* Blockquote accent */
+      blockquote {
+        border-left: 4px solid var(--fotokraft-yellow) !important;
+      }
+      
+
+      /* Logo image styling */
+      .logo-img {
+        height: 80px;
+        width: auto;
+        margin-right: 15px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      
+      /* Adjust logo text alignment */
+      .logo a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+      
+      /* Logo text styling with Extenda 20 Micro font */
+      .logo {
+        font-family: 'Extenda 20 Micro', sans-serif !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+		font-size: 3.2rem !important;
+      }
+      
+      /* Sponsors Section Styling */
+      .sponsors-section {
+        background-color: #1a1a1a;
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+      
+      .sponsor-box {
+        height: 120px;
+        background-color: #2a2a2a;
+        border: 2px solid var(--fotokraft-yellow);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(255, 252, 51, 0.15);
+      }
+      
+      .sponsor-placeholder {
+        text-align: center;
+        width: 100%;
+      }
+      
+      .sponsor-cta {
+        background-color: #333 !important;
+        border-color: var(--fotokraft-yellow) !important;
+      }
+      
+      .sponsor-cta-text {
+        color: var(--fotokraft-yellow) !important;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      
+      .sponsor-logo {
+        max-width: 120px;
+        max-height: 90px;
+        width: auto;
+        height: auto;
+        filter: grayscale(0%) brightness(1);
+      }
+    </style>
+  </head>
+  <body>
+
+
+  	<nav id="navbar" class="navbar">
+		  <ul class="nav-menu">
+		    <li>
+		      <a data-scroll="home" href="#home" class="dot active">
+		        <span>Home</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a data-scroll="about" href="#about" class="dot">
+		        <span>About</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a data-scroll="services" href="#services" class="dot">
+		        <span>Services</span>
+		      </a>
+		    </li>
+        <li>
+		      <a data-scroll="sponsors" href="#sponsors" class="dot">
+		        <span>Sponsors</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a data-scroll="work" href="#work" class="dot">
+		        <span>Gallery</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a data-scroll="testimonial" href="#testimonial" class="dot">
+		        <span>Testimony</span>
+		      </a>
+		    </li>
+		    <li>
+		      <a data-scroll="contact" href="#contact" class="dot">
+		        <span>Contact</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
+		<!-- End Nav Section -->
+
+		<!-- Start Home Section -->
+		<section id="home" class="hero-wrap js-fullheight" style="background-image: url(images/bg-1.jpg);" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-lg-7 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<h1 class="logo"><a href="index.html">
+				<img src="images/fototransparent.png" alt="Fotokraft Logo" class="logo-img">Fotokraft<small>Estd. 2012</small></a></h1>
+		  				<h1 class="mb-4">The<br>Photography club of JEC</h1>
+		  				<p class="mb-4">“The best thing about a picture is that it never changes, even when the people in it do.” – Andy Warhol</p>
+		  				<p class="mt-5"><a href="#work" class="btn-custom">Explore More <span class="ion-ios-arrow-round-forward"></span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<!-- End Home Section -->
+
+		<!-- Start About Me Section -->
+		<section class="ftco-about img ftco-section" id="about">
+    	<div class="container">
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img img-video d-flex align-self-stretch align-items-center" style="background-image:url(images/thmb.png);">
+	    								<a href="https://www.youtube.com/watch?v=f-igXPkvUxk" target="_blank" class="d-block w-100 h-100" style="position: relative; display: flex; justify-content: center; align-items: center; text-decoration: none;">
+								<span class="ion-ios-play" style="font-size: 50px; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.5); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></span>
+							</a>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5">
+	          <div class="heading-section ftco-animate">
+	            <h2 class="mb-4">Fotokraft is a Creative Direction <br>Photography Club</h2>
+	            <p>It was started by a group of
+					students of Jorhat Engineering College in the year 2012 on
+					the 18th of April FotoKraft is responsible for documenting
+					each and every activity in the college premises, be it formal
+					functions organized by the administration or informal
+					activities that include student participation. By far it has been
+					the most active Club of Jorhat Engineering College as it
+					happens to be an inexplicable part of the socio-cultural
+					structure of the college by itself. Besides that the other
+					activities of the clubs include photo-shootouts, holding
+					photography- workshops, competitions, seminars and photo
+					exhibitions. The club has its own photo gallery in the college
+					premises which displays the immense talent of its members</p>
+
+	            <div class="counter-wrap ftco-animate d-flex my-md-4">
+	              <div class="text">
+	              	<p class="mb-4">
+		                <span>Thousands of events and memories captured</span>
+	                </p>
+	              </div>
+		          </div>
+		          <div class="d-flex w-100">
+		            <div class="img img-about-2 mr-2" style="background-image: url(images/jec.jpg);"></div>
+		            <div class="img img-about-2 ml-2" style="background-image: url(images/cam1.png);"></div>
+		          </div>
+		          <blockquote class="blockquote mt-5">
+		          	<p class="mb-2">"   Photography is the story I fail to put into words."</p>
+		          	<span>&mdash; Destin Sparks</span>
+		          </blockquote>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+		<!-- End About Me Section -->
+
+		<!-- Start Services Section -->
+		<section id="services" class="ftco-section">
+		  <div class="container">
+		  	<div class="row">
+		  		<div class="col-md-9">
+		  			<div class="row">
+				  		<div class="col-md-5 heading-section ftco-animate pb-5">
+		            <h2 class="mb-4">What we do -</h2>
+		            <p>Fotokraft engages in various photography-related activities to foster creativity and document college life through the lens.</p>
+		          </div>
+			  	</div>
+		  			<div class="row">
+		        	<div class="col-md-4">
+		        		<div class="media block-6 services d-block ftco-animate">
+		              <div class="icon"><span class="flaticon-video-camera"></span></div>
+		              <div class="media-body">
+		                <h3 class="heading mb-3">Photo Shootouts</h3>
+		                <p>Regular photography sessions and outdoor shoots to capture stunning visuals and improve technical skills of club members.</p>
+		              </div>
+		            </div> 
+		        	</div>
+		        	<div class="col-md-4">
+		        		<div class="media block-6 services d-block ftco-animate">
+		              <div class="icon"><span class="flaticon-video-player"></span></div>
+		              <div class="media-body">
+		                <h3 class="heading mb-3">Photography Workshops</h3>
+		                <p>Comprehensive workshops covering camera techniques, composition, lighting, and post-processing to enhance photography skills.</p>
+		              </div>
+		            </div> 
+		        	</div>
+		        	<div class="col-md-4">
+		        		<div class="media block-6 services d-block ftco-animate">
+		              <div class="icon"><span class="flaticon-video-player-1"></span></div>
+		              <div class="media-body">
+		                <h3 class="heading mb-3">Exhibitions & Competitions</h3>
+		                <p>Organizing photography exhibitions, competitions like Creatrix, and showcasing member talents through our campus gallery.</p>
+		              </div>
+		            </div> 
+		        	</div>
+	        	</div>
+	        </div>
+	        <div class="col-md-3 d-flex align-items-stretch">
+	        	<div class="img w-100" style="background-image: url(images/cam.png);"></div>
+	        </div>
+        </div>
+      </section>
+    <section id="sponsors">
+        
+        <!-- Start Sponsors Section -->
+        <div class="row sponsors-section pt-md-5">
+        	<div class="col-md-12">
+        		<div class="heading-section text-center ftco-animate mb-5">
+        			<span class="subheading">PAST SPONSORS</span>
+        			<h2 class="mb-4">Our Valued Partners</h2>
+        			<p>We are grateful to our sponsors who supported Fotokraft's mission to capture and preserve memories.</p>
+        		</div>
+        	</div>
+        	
+        	<div class="col-md-12">
+        		<div class="row justify-content-center">
+        			
+        			<!-- Sponsor Box 3 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/nikon.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 4 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/canon.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 5 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/thcafe.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 6 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/dight.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 7 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/hotel.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 8 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/opul.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Sponsor Box 9 -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<div class="sponsor-box d-flex align-items-center justify-content-center">
+        					<img src="images/utb.png" alt="Sponsor" class="sponsor-logo">
+        				</div>
+        			</div>
+        			
+        			<!-- Call to Action for Becoming a Sponsor -->
+        			<div class="col-md-2 col-sm-4 col-6 mb-4 ftco-animate">
+        				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeoHiILDe4QKyyQeuEtt2pIDTWhPvi1EOrOR5IZeqKBuMwLLg/viewform?usp=header">
+                  <div class="sponsor-box sponsor-cta d-flex align-items-center justify-content-center">
+                    <div class="sponsor-placeholder">
+                      <span class="sponsor-cta-text">Become<br>a Sponsor</span>
+                    </div>
+                  </div>
+        			  </a>
+        		  </div>
+        		</div>
+        	</div>
+        </div>
+    </section>
+        <!-- End Sponsors Section -->
+
+		<!-- Start Testimonials Section -->
+		<section id="work" class="ftco-section">
+		  <div class="container">
+		  	<div class="row justify-content-center">
+		  		<div class="col-md-4 heading-section text-center ftco-animate pb-5">
+            <h2 class="mb-4">Our Photography Gallery</h2>
+            <p>Showcasing the best works from Fotokraft members, capturing the essence of college life and artistic expression through the lens.</p>
+          </div>
+		  	</div>
+		  </div> 
+		  <div class="container-fluid px-md-0">
+        <div class="row no-gutters">
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-1.jpg);">
+            	<a href="images/model-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-2.jpg);">
+            	<a href="images/model-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span></span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-3.jpg);">
+            	<a href="images/model-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-4.jpg);">
+            	<a href="images/model-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-5.jpg);">
+            	<a href="images/model-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-6.jpg);">
+            	<a href="images/model-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-7.jpg);">
+            	<a href="images/model-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-8.jpg);">
+            	<a href="images/model-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-9.jpg);">
+            	<a href="images/model-9.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-10.jpg);">
+            	<a href="images/model-10.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-11.jpg);">
+            	<a href="images/model-11.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="model img d-flex align-items-end" style="background-image: url(images/model-12.jpg);">
+            	<a href="images/model-12.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+            	<!--<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Nature</span>
+	              	<h2><a href="work-single.html">Beautiful Work</a></h2>
+	              </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div> 
+		</section>
+		<!-- End Project Section -->
+
+		<section class="ftco-section testimony-section" id="testimonial">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-4 heading-section ftco-animate">
+          	<span class="subheading">Achievements</span>
+            <h2 class="mb-4">Fotokraft's Impact & Recognition</h2>
+            <p>Since 2012, Fotokraft has been the backbone of JEC's visual documentation, capturing countless memories and fostering photography talent across the campus.</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_01.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">civil engineer in training, photographer with an eye for detail and the manager who somehow keeps both people and pixels in perfect alignment.</p>
+                    <div class="pl-5">
+	                    <p class="name">Palash Kalita</p>
+	                    <span class="position">Club Head</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_06.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">Engineer on weekdays, traveler on weekends, photographer who tells stories through every frame, and an energy pack who never runs out of charge.</p>
+                    <div class="pl-5">
+	                    <p class="name">Md. Masood Ahmed</p>
+	                    <span class="position">Club Head</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_04.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">Mechanical engineering by study, drone-builder by curiosity, and a storyteller through videos that sometimes fly higher than his gadgets.</p>
+                    <div class="pl-5">
+	                    <p class="name">Simanta Samiran Deka</p>
+	                    <span class="position">Club Head</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_03.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">mechanical engineer in class, photographer behind the lens, coder by choice, and a chess player who swears he only loses when “testing new strategies".</p>
+                    <div class="pl-5">
+	                    <p class="name">Amit Tripathi</p>
+	                    <span class="position">Editor and Social Media team</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_05.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">videographer by passion, video editor by precision, coder by curiosity, and a hardworker who edits life frame by frame till it’s perfect.</p>
+                    <div class="pl-5">
+	                    <p class="name">Udipta Sarma</p>
+	                    <span class="position">Editor and Cinematographer</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_07.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">Calm in class, wizard in After Effects, turning raw clips into visuals that look like they belong on the big screen.</p>
+                    <div class="pl-5">
+	                    <p class="name">Himan Sarma</p>
+	                    <span class="position">Editor and Cinematographer</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_02.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">CSE brain by default, blogger by expression, and a videography enthusiast always looking for the next frame worth capturing.</p>
+                    <div class="pl-5">
+	                    <p class="name">Gunjan Gogoi</p>
+	                    <span class="position">Editor and Cinematographer</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_08.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">Photographer with an eye for details, social media wizard by habit, and the reason your feed looks way cooler than your life.</p>
+                    <div class="pl-5">
+	                    <p class="name">Dikshita Kashyap</p>
+	                    <span class="position">Social Media Team</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+			  <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_09.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5 pl-4 line">Lens in one hand, phone in the other, balancing photography with social media magic like it’s second nature.</p>
+                    <div class="pl-5">
+	                    <p class="name">Chyanika Buragohain</p>
+	                    <span class="position">Social Media Team</span>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+			  
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<!-- Start Contact Section -->
+		<section class="ftco-section contact-section" id="contact">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-4 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Us</h2>
+            <p>Get in touch with Fotokraft team for photography services, workshops, or to join our vibrant photography community at JEC.</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<div>
+	            <h3 class="mb-4">Address</h3>
+	            <p>Jorhat Engineering College<br>Jorhat, Assam, India - 785007</p>
+	          </div>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<div>
+	            <h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel:+917002456063">Palash Kalita: +91 70024 56063</a><br>
+	            <a href="tel:+918638899438">Md. Masood Ahmed: +91 86388 99438</a></p>
+	            </div>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	            <h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:jecfotokraft@gmail.com">jecfotokraft@gmail.com</a></p>
+	          </div>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<div>
+	            <h3 class="mb-4">Social Media</h3>
+	            <p><a href="https://www.instagram.com/fotokraftjec_official?igsh=MWs0dWwyZGVncHRkcQ==" target="_blank">Instagram: @fotokraftjec_official</a></p>
+	            </div>
+	          </div>
+          </div>
+        </div>
+
+        <!-- Start Contact Section div class="row block-9">
+          <div class="col-md-6 ftco-animate">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='#contact';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdhDVBVCrfcYCLnBcNSevtOmpus7bSeWI4OTlmAqFtkUxfNZg/formResponse" method="POST" target="hidden_iframe" id="contactForm" class="contact-form p-4 p-md-5 py-md-5" onsubmit="submitted=true;">
+              <div class="form-group">
+                <input type="text" name="entry.1045781291" class="form-control" placeholder="Your Name" required id="nameField">
+              </div>
+              <div class="form-group">
+                <input type="email" name="entry.whsOnd.zHQkBf" class="form-control" placeholder="Your Email" required id="emailField">
+              </div>
+              <div class="form-group">
+                <input type="text" name="entry.1065046570" class="form-control" placeholder="Subject" required id="subjectField">
+              </div>
+              <div class="form-group">
+                <textarea name="entry.839337160" id="messageField" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" id="submitBtn">
+              </div>
+              <div id="formMessage" class="mt-3" style="display: none;"></div>
+            </form>
+          </div>-->
+
+          <div class="col-md-6 d-flex align-items-stretch">
+          </div>
+        </div>
+      </div>
+    </section>
+		<!-- End Contact Section -->
+
+
+		<!-- Start Footer Section -->
+		<footer class="ftco-footer py-5">
+		  <div class="container text-center">
+		    <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Abhinav Neog <i class="icon-heart" aria-hidden="true"></i></p>
+
+					  <ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="https://www.youtube.com/channel/UC-UEhBLFdYOEAt2kkk1XjCw"><span class="icon-youtube"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/fotokraftjec_official?igsh=MWs0dWwyZGVncHRkcQ=="><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+		  </div>
+		</footer>
+		<!-- End Footer Section -->
+   
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
